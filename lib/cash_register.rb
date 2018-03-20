@@ -28,6 +28,6 @@ class CashRegister
   end
 
   def items
-    @cart.uniq
+    @cart
   end
 end
