@@ -25,6 +25,6 @@ class CashRegister
   end
 
   def items
-    @cart
+    @cart.uniq
   end
 end
