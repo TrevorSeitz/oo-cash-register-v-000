@@ -10,9 +10,9 @@ class CashRegister
     @discount = discount
   end
 
-  def add_item(item, price)
+  def add_item(title, price)
     cart = []
-    cart << item
+    cart << title
     total += price
   end
 end
