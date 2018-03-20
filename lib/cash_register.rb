@@ -4,7 +4,7 @@ class CashRegister
 
   def initialize(discount=0)
     @cart = []
-    @discount = discount
+    @discount = discount * 0.01
     @total = 0
   end
 
