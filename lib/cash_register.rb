@@ -13,6 +13,6 @@ class CashRegister
   def add_item(title, price)
     cart = []
     cart << title
-    total += price
+    @total += price
   end
 end
