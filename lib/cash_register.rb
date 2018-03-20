@@ -4,7 +4,7 @@ class CashRegister
 
   def initialize(discount=0)
     @cart = []
-    @discount = discount * 0.01
+    @discount = discount
     @total = 0
   end
 
@@ -14,7 +14,7 @@ class CashRegister
   end
 
   def apply_discount
-    @total = @total - (@total * @discount)
+    @total = @total - (@total * (@discount * 0.01))
     # binding.pry
       if @discount <= 0
         "There is no discount to apply."
