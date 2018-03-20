@@ -21,7 +21,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    @total.clear
+    @total = 0
   end
 
   def items
