@@ -1,4 +1,4 @@
-
+require "pry"
 class CashRegister
   attr_accessor :discount, :item, :last_transaction, :total
 
@@ -6,6 +6,7 @@ class CashRegister
     @cart = []
     @discount = discount
     @total = 0
+    binding.pry
   end
 
   def add_item(title, price, quantity = 1)
